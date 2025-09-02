@@ -4,7 +4,9 @@ const body = document.getElementById("body");
 const noteDiv = document.getElementById("note-div");
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
+
   const value = input.value;
+  input.value = "";
   if (value) {
     const div1 = document.createElement("div");
     div1.className =
